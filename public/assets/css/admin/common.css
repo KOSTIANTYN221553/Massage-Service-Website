@@ -1,0 +1,87 @@
+.hidden{
+    display:none!important;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.w-120{
+    width:120px;
+}
+.wh-80{
+    width:80px;
+    height:80px;
+}
+
+.table thead th.sorting, .table thead th.sorting_asc,
+.table thead th.sorting_desc{
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px;
+}
+.sorting:before,.sorting:after,
+.sorting_desc:before,.sorting_desc:after,
+.sorting_asc:before,.sorting_asc:after{
+    position: absolute;
+    bottom: 0.5em;
+    display: block;
+    opacity: 0.3;
+}
+.sorting_desc:before,.sorting_asc:before, .sorting:before{
+    right: 1em;
+    content: "\2191";
+}
+.sorting_desc:after,.sorting_asc:after,.sorting:after{
+    right: 0.5em;
+    content: "\2193";
+}
+.sorting_asc:before,
+.sorting_desc:after{
+    opacity: 1;
+}
+
+.float-right{
+    float:right;
+}
+
+.wrapper {
+    min-height: 910px;
+}
+
+.cursor{
+    cursor:pointer;
+}
+
+.comments {
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    padding: 10px 0;
+    color: #565758;
+}
+
+.media:first-child {
+    margin-top: 0;
+}
+
+li.media {
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+}
+
+.comment-rect {
+    padding-left: 10px;
+}
+
+.top-counter{
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+
+@media (max-width:480px) {
+    .top-counter{
+        font-size: 10px;
+    }
+}
